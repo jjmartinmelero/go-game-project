@@ -3,5 +3,41 @@
 {{define "title"}} Go Game {{end}}
 
 {{define "content"}} 
-<h1>Welcome !</h1>
+
+<section class="container py-5">
+    <h1 class="display-4 fw-bold py-3 text-center">Welcome to the game</h1>
+    <div class="row">
+        <div class="col-md-4">
+            <img class="img-fluid" src="static/img/rock_icon.png" alt="rock-icon">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" src="static/img/paper_icon.png" alt="rock-icon">
+        </div>
+        <div class="col-md-4">
+            <img class="img-fluid" src="static/img/scissors_icon.png" alt="rock-icon">
+        </div>
+    </div>
+    <p class="lead text-center fs-2 py-4" >
+        play against the computer
+    </p>
+    <p class="text-center">
+        <a href="/new" class="btn btn-success btn-lg">New Game</a>
+    </p>
+</section>
+
+<section class="container py-5">
+    <h2 class="mb-4">How you can play ?</h2>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item">
+            Create a new game
+        </li>
+        <li class="list-group-item">
+            Your name
+        </li>
+        <li class="list-group-item">
+            Play !
+        </li>
+    </ol>
+</section>
+
 {{end}}
